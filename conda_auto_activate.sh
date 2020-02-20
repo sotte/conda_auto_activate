@@ -16,7 +16,7 @@ function _conda_auto_activate() {
     if [[ $PATH == *"$ENV"* ]]; then
       echo "Conda env '$ENV' already activated."
     else
-      source activate $ENV
+      conda activate $ENV
     fi
   fi
 }
